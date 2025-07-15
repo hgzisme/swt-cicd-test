@@ -2,8 +2,8 @@ Feature('Simple Web');
 
 Scenario('Trang chủ hiển thị đúng tiêu đề và nút', ({ I }) => {
   I.amOnPage('http://localhost:3000');
-  // I.see('Welcome to CI/CD Test Page'); //this will pass
-  I.see('This text does not exist on the page'); // This will fail
+  I.see('Welcome to CI/CD Test Page'); //this will pass
+  // I.see('This text does not exist on the page'); // This will fail
   I.seeElement('#hello-btn');
 });
 
